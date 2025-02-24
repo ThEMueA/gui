@@ -1,0 +1,10 @@
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\bin\Debug\Draw.exe
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\bin\Debug\Draw.pdb
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.csproj.AssemblyReference.cache
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.DoubleBufferedPanel.resources
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.MainForm.resources
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.csproj.GenerateResource.cache
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.csproj.CoreCompileInputs.cache
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.exe
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.pdb
+D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.Properties.Resources.resources
