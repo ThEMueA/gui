@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 
 namespace Draw
@@ -18,8 +19,10 @@ namespace Draw
 		{
 			rectangle = rect;
 		}
-		
-		public Shape(Shape shape)
+
+        
+
+        public Shape(Shape shape)
 		{
 			this.Height = shape.Height;
 			this.Width = shape.Width;
@@ -27,6 +30,7 @@ namespace Draw
 			this.rectangle = shape.rectangle;
 			
 			this.FillColor =  shape.FillColor;
+			Selected = false;
 		}
 		#endregion
 		
@@ -84,6 +88,13 @@ namespace Draw
         {
             get { return borderSize; }
             set { borderSize= value; }
+        }
+
+        private bool selected;
+		public virtual bool Selected
+        {
+            get { return selected; }
+            set { selected = value; }
         }
 
 

@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
+using System.Linq;
 
 namespace Draw
 {
@@ -13,24 +16,37 @@ namespace Draw
 		public DialogProcessor()
 		{
 		}
-		
-		#endregion
-		
-		#region Properties
-		
-		/// <summary>
-		/// Избран елемент.
-		/// </summary>
-		private Shape selection;
+
+        #endregion
+
+        #region Properties
+
+        /// <summary>
+        /// Избран елемент.
+        /// </summary>
+        /// 
+
+        public  static List<Shape> selectionlist = new List<Shape>();
+  
+
+
+        private Shape selection;
 		public Shape Selection {
-			get { return selection; }
-			set { selection = value; }
+			get { return selection;  }
+			set { selection = value;
+				if(selectionlist.Contains(selection)) 
+				selectionlist.Remove(selection);
+				else 
+			    selectionlist.Add(selection);
+				//broi = " "+selectionlist.Count;
+			}
 		}
 		
 		/// <summary>
 		/// Дали в момента диалога е в състояние на "влачене" на избрания елемент.
 		/// </summary>
 		private bool isDragging;
+	//	public string broi = "haha";
 		public bool IsDragging {
 			get { return isDragging; }
 			set { isDragging = value; }
@@ -78,20 +94,29 @@ namespace Draw
             ShapeList.Add(rect);
         }
 
-        /// <summary>
-        /// Проверява дали дадена точка е в елемента.
-        /// Обхожда в ред обратен на визуализацията с цел намиране на
-        /// "най-горния" елемент т.е. този който виждаме под мишката.
-        /// </summary>
-        /// <param name="point">Указана точка</param>
-        /// <returns>Елемента на изображението, на който принадлежи дадената точка.</returns>
-        public Shape ContainsPoint(PointF point)
+		/// <summary>
+		/// Проверява дали дадена точка е в елемента.
+		/// Обхожда в ред обратен на визуализацията с цел намиране на
+		/// "най-горния" елемент т.е. този който виждаме под мишката.
+		/// </summary>
+		/// <param name="point">Указана точка</param>
+		/// <returns>Елемента на изображението, на който принадлежи дадената точка.</returns>
+	
+		public Shape ContainsPoint(PointF point)
 		{
 			for(int i = ShapeList.Count - 1; i >= 0; i--){
 				if (ShapeList[i].Contains(point)){
-					ShapeList[i].FillColor = Color.Red;
-						
-					return ShapeList[i];
+					if (ShapeList[i].Selected==false)
+					{
+						ShapeList[i].FillColor = Color.Red;
+						ShapeList[i].Selected = true;
+
+                    }
+					else { ShapeList[i].FillColor = Color.White;
+						ShapeList[i].Selected = false;
+                    }
+
+                    return ShapeList[i];
 				}	
 			}
 			return null;
