@@ -8,3 +8,13 @@ D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.cs
 D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.exe
 D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.pdb
 D:\users\fmi\Downloads\draw-2024-2025_0\SharpDevelop2-WinForms\obj\Debug\Draw.Properties.Resources.resources
+d:\users\fmi\Desktop\New folder (4)\gui\bin\Debug\Draw.exe
+d:\users\fmi\Desktop\New folder (4)\gui\bin\Debug\Draw.pdb
+d:\users\fmi\Desktop\New folder (4)\gui\obj\Debug\Draw.csproj.AssemblyReference.cache
+d:\users\fmi\Desktop\New folder (4)\gui\obj\Debug\Draw.Properties.Resources.resources
+d:\users\fmi\Desktop\New folder (4)\gui\obj\Debug\Draw.DoubleBufferedPanel.resources
+d:\users\fmi\Desktop\New folder (4)\gui\obj\Debug\Draw.MainForm.resources
+d:\users\fmi\Desktop\New folder (4)\gui\obj\Debug\Draw.csproj.GenerateResource.cache
+d:\users\fmi\Desktop\New folder (4)\gui\obj\Debug\Draw.csproj.CoreCompileInputs.cache
+d:\users\fmi\Desktop\New folder (4)\gui\obj\Debug\Draw.exe
+d:\users\fmi\Desktop\New folder (4)\gui\obj\Debug\Draw.pdb

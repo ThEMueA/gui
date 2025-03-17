@@ -67,7 +67,8 @@ namespace Draw
         void ViewPortMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 		{
 			if (pickUpSpeedButton.Checked) {
-				dialogProcessor.Selection = dialogProcessor.ContainsPoint(e.Location);
+				dialogProcessor.Selection = (dialogProcessor.ContainsPoint(e.Location));
+			//	label1.Text = dialogProcessor.broi;
 				if (dialogProcessor.Selection != null) {
 					statusBar.Items[0].Text = "Последно действие: Селекция на примитив";
 					dialogProcessor.IsDragging = true;
@@ -84,9 +85,11 @@ namespace Draw
 		void ViewPortMouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
 		{
 			if (dialogProcessor.IsDragging) {
+
 				if (dialogProcessor.Selection != null) statusBar.Items[0].Text = "Последно действие: Влачене";
 				dialogProcessor.TranslateTo(e.Location);
 				viewPort.Invalidate();
+
 			}
 		}
 
